@@ -1,6 +1,6 @@
 const app = require("./app");
 const config = require("./app/config");
-const mongoDB = require("./app/ultis/mongodb.ulti");
+const MongoDB = require("./app/ultis/mongodb.ulti");
 
 // Start server
 
@@ -19,4 +19,6 @@ async function StartServer() {
         process.exit();
     }
 }
+
+module.exports = StartServer()
 
